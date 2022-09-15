@@ -4,16 +4,17 @@ const pokemon1 = {
   nivel: 5,
 };
 
+// A
 const pokemon2 = {
   ...pokemon1,
   nome: "Squirtle",
   tipo: "Água",
 };
 
-// A
+// B
 pokemon1.ataques = [];
 
-//B
+
 const ataque1 = {
   nome: "Investida",
   dano: 40,
@@ -22,7 +23,7 @@ const ataque1 = {
 };
 pokemon1.ataques.push(ataque1);
 
-//C
+// C
 pokemon2.ataques = [...pokemon1.ataques];
 
 const ataque2 = {
@@ -38,10 +39,13 @@ const ataque3 = {
   tipo: "Água",
   precisao: 100,
 };
-//D
+
+// D
 pokemon2.ataques.push(ataque2);
-//E
+
+// E
 pokemon2.ataques.push(ataque3);
 
+// F
 console.log(pokemon1);
 console.log(pokemon2);
